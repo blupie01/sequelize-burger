@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 	models.Burger.findAll({
 	}).then(function(burgers) {
 		res.render('index', {
-			burgers: burgers
+			burger: burgers
 		});
 	});
 });
@@ -23,7 +23,7 @@ router.post('/', function(req, res) {
 });
 
 // Update the burger to devoured with PUT
-router.put('/devoured/:id', function(req, res) {
+router.put('/devour/:id', function(req, res) {
 	models.Burger.update({
 		devoured: true
 	}, {
