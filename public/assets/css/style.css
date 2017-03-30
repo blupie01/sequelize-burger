@@ -1,0 +1,116 @@
+@font-face {
+	font-family: double_bubble;
+	src: url(../fonts/Double_Bubble_shadow.otf);
+}
+
+@font-face {
+	font-family: eat_at_joes;
+	src: url(../fonts/Eat_at_Joes.ttf);
+}
+
+@font-face {
+	font-family: mexcellent;
+	src: url(../fonts/mexcellent_rg.ttf);
+}
+
+@-webkit-keyframes backgroundScroll {
+	from {background-position: 0 0;}
+	to {background-position: 0 50000px;}
+}
+
+@keyframes backgroundScroll {
+	from {background-position: 0 0;}
+	to {background-position: 0 50000px;}
+}
+
+/*Only hides scrollbar for Chrome*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+    background:url(../img/burgers.jpg);
+	-webkit-animation: backgroundScroll 1000s linear infinite;
+	background-size:100% 100%;
+	background-position:top;
+	background-attachment:fixed;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1, h3, h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+input[type="text"] {
+	text-align: center;
+	font-family: mexcellent;
+    font-size: 1.5em;
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 750px;
+	background-color: rgba(255, 255, 255, .8);
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#header {
+	background-color: #1C637A;
+	font-family: double_bubble;
+	color: #78CCC1;
+	margin-bottom: 15px;
+}
+
+#make-burger-label {
+	color: black;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#results-container {
+	height: 100%;
+}
+
+#results {
+	height: 110%;
+}
+
+#eaten, #not-eaten {
+	overflow-y: scroll;
+}
+
+#eaten {
+	background-color: #EDA64A;
+	height: 100%;
+}
+
+#not-eaten {
+	background-color: #15B37E;
+	height: 100%;
+}
+
+.fresh-or-tummy {
+	font-family: eat_at_joes;
+	font-size: 2em;
+}
+
+#add_burger {
+	font-family: double_bubble;
+	font-size: 2em;
+	color: #78CCC1;
+}
+
+.single-burger-container {
+	font-family: eat_at_joes;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 8px 0px;
+	padding: 10px 0px;
+	background-color: rgba(255, 255, 255, .8);
+}
