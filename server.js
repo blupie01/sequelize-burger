@@ -2,7 +2,7 @@ var express = require('express'),
 	methodOverride = require('method-override'),
 	bodyParser = require('body-parser');
 
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -31,4 +31,4 @@ app.use("/", burgers);
 //  	})
 // });
 
-app.listen(port);
+app.listen(PORT);
