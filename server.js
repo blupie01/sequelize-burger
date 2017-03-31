@@ -25,10 +25,10 @@ app.use("/", burgers);
 
 // app.listen(port);
 
-Models.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
-    console.log(`Listening on PORT: ${PORT}`);
- 	})
-});
+// Models.sequelize.sync({ force: false }).then(function() {
+//   app.listen(PORT, function() {
+//     console.log(`Listening on PORT: ${PORT}`);
+//  	})
+// });
 
 app.listen(port);
