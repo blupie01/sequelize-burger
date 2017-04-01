@@ -2,7 +2,7 @@ var express = require('express'),
 	methodOverride = require('method-override'),
 	bodyParser = require('body-parser');
 
-var PORT = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -26,9 +26,7 @@ app.use("/", burgers);
 // app.listen(port);
 
 Models.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
+  app.listen(port, function() {
     console.log(`Listening on PORT: ${PORT}`);
  	})
 });
-
-// app.listen(PORT);
