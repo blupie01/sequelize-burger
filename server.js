@@ -1,6 +1,7 @@
 var express = require('express'),
 	methodOverride = require('method-override'),
-	bodyParser = require('body-parser');
+	bodyParser = require('body-parser')
+	Models = require('./models');
 
 var port = process.env.PORT || 3000;
 
